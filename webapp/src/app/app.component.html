@@ -1,0 +1,15 @@
+<input type="file" (change) = "doSomething()">
+
+<form #uploadForm id="uploadForm" (submit) = "uploadFiles($event)">
+  <label for="files">Select files:</label>
+  <input type="file" id="files" name="files" multiple /><br /><br />
+  <label for="note">Note:</label>
+  <input
+    type="text"
+    name="note"
+    id="note"
+    placeholder="Note about the files"
+  />
+  <br /><br />
+  <input type="submit" />
+</form>
